@@ -11,4 +11,5 @@ deploy:
    password: vinesh13
    api: https://api.run.pivotal.io
    organization: Jigarthanda
-   space: development
+   space: development1
+   domain: hackathon.vi
