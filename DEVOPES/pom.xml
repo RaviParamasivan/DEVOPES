@@ -8,7 +8,7 @@
 <version>0.0.1-SNAPSHOT</version>
 </parent>
   
-   <artifactId>DEVOPES-APP</artifactId>
+   <artifactId>DEVOPES</artifactId>
   <packaging>jar</packaging>
 
   <name>DEVOPES</name>
