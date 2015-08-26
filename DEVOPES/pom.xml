@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
 <parent>
- <artifactId>DEVOPES</artifactId>
-<groupId>com.embarkmobile.androidexample</groupId>
+ <artifactId>DEVOPES-PAR</artifactId>
+<groupId>DEVOPES-PAR</groupId>
 <version>0.0.1-SNAPSHOT</version>
 </parent>
   
