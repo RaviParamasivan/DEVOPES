@@ -2,6 +2,6 @@ applications:
 - name: DEVOPES
   memory: 512M
   host: my-java-app
-  domain: cfapps.io
+  domain: hackathon.vi 
   path: DEVOPES-PAR.war
 
