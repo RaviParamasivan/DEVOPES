@@ -1,0 +1,7 @@
+applications:
+- name: DEVOPES
+  memory: 512M
+  host: my-java-app
+  domain: jigarthanda.cfapps.io
+  path: DEVOPES-PAR.war
+
