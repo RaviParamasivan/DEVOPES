@@ -3,5 +3,5 @@ applications:
   memory: 512M
   host: my-java-app
   domain: cfapps.io
-  path: DEVOPES.war
+  path: DEVOPES-PAR.war
 
