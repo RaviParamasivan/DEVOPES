@@ -1,0 +1,15 @@
+applications:
+- name: DEVOPES
+  memory: 512M
+  instances: 3
+  host: my-java-app
+  domain: cfapps.io
+  path: DEVOPES.war
+  env:
+    greeting: Hello
+  services:
+    app-db:
+      label: elephantsql
+      provider: elephantsql
+      version: n/a
+      plan: turtle
