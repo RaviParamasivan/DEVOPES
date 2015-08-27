@@ -6,7 +6,7 @@
     <groupId>DEVOPES-PAR</groupId>
 	<artifactId>DEVOPES-PAR</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+     <packaging>war</packaging>
     <modules>
         <module>DEVOPES</module>
     </modules>
