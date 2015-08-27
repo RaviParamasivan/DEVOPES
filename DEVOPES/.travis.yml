@@ -1,4 +1,14 @@
-language : java
-
+language: java
 install: mvn clean install
-
+deploy:
+edge: true
+  provider:
+    provider: cloudfoundry
+  api: https://api.run.pivotal.io
+  username: rsnvinesh@gmail.com
+  password:
+    secure: hclcrFeoOsYep8Ntm27/WewwOjwAGd0LJJ7oEyeB8ZS+Snudsgvdt29Jn41nGm9TVW78YK8eDdexnZgOmbPfuv4jRGMfXMwokFnsryq5RYptr2bkscSkhT7ueXe6KclWMoCCGIntjqXo4YIp+9lkhCBPy6YL25gRLgaxTm6bbDMofPWIqUMBwtTwpLPmrTTCyEUBdX52bYhuL9f6zpfgeXOPCNlqzPJ9pdGHUWzmw9H4cZM9IL7CFYtiiK+xCvWyg+VlW7sTiAp0Eek/thCXyxhb3336Tg4jAksdd+YlXmdbnFw+QvLX3IwvtbQuU7SXHtnHJbCR9aBKg+1buQRkYk5yzaHewflFSsiBvFH+2yTAUiEVxFF69DGv7K3+nPb6QCTbt1eWBD4fX3tLS6UGvAtJfDgIOpBDxdqA0UMtO+E0b0EHy18pej7TN9U7NpEXxnR1n1X/97QzD8YNSe3Fgn8p3I4n00tmzZyORR1lcp8Cf7UyuXhM552F/9DVv6uUHv+FuAbbsZ8vgRH4QiBEwI3AXVH8A3z6/H7OfKKe/UQiLmWGzooKstOtN2eHJu4qIErd/Tw/oX8ExvZXEbZyCqN8o1mAxVAj1GyHD04zZILNMxkkl+ogRLIL7zyxQEMyKBXnwZY47arW802roncg6b6PLk+9z3crm1AvrV0sp7w=
+  organization: Jigarthanda
+  space: development1
+  on:
+    repo: RaviParamasivan/DEVOPES
