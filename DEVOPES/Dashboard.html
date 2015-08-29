@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+html, body {
+	overflow-x: hidden!important;
+	/* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	min-height: 100%;
+	background: #fff;
+	font-size:12px
+}
+.row {
+	margin-top:20px;
+	margin-bottom:20px;
+	float:left;
+	width:100%;
+	background:#FFFFFF
+}
+.panel-heading {
+	padding: 10px 15px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-bottom: 1px solid #eee;
+	background-color: #666666;
+	color:#fff;
+	font-weight:bold
+}
+section {
+	margin-left:10px;
+	margin-right:10px;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	float: left;
+}
+.borderBG {
+	border: 1px solid #ecedee;
+	background: #eee;
+}
+.col-md-2 {
+	width: 16.666666666666664%;
+}
+.col-md-3 {
+	width: 25%;
+}
+.sm-st {
+	background: #f2f2f2;
+	padding: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-left:10px;
+	border:1px solid #ccc
+}
+.wrapper {
+	width:1000px;
+	position:relative;
+	margin:auto;
+	background-color:#fff
+}
+.sm-st-info span {
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+}
+.sm-st-info {
+	font-size: 12px;
+	padding-top: 2px;
+	font-size:14px;
+}
+.sm-st-icon {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	line-height: 60px;
+	text-align: center;
+	font-size: 30px;
+	background: #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	margin-right: 10px;
+	color: #fff;
+}
+.st-red {
+	background-color: #F05050;
+}
+.st-blue {
+	background-color: #0099FF;
+}
+.st-green {
+	background-color: #009933;
+}
+.st-yellow {
+	background-color: #FFCC00;
+}
+.st-violet {
+	background-color: #9966CC;
+}
+.st-brown {
+	background-color: #993300;
+}
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+.panel-body {
+	padding: 15px;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	padding: 8px;
+	line-height: 1.428571429;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+	text-align:left
+}
+.clearBoth {
+	clear:both
+}
+.label-red {
+	color:#FF0000
+}
+.label-green {
+	color:#009933
+}
+.col-md-8 {
+	width: 66.66666666666666%;
+}
+.col-md-4 {
+	width: 33.33333333333333%;
+}
+a {
+	text-decoration:none;
+	color:#fff
+}
+.logo {
+	color:#FF9900;
+	font-size:24px;
+	font-weight: bold;
+	padding-top: 50px;
+	padding-left: 20px;
+}
+.HeaderInnerBG {
+	background: -webkit-linear-gradient(#666, #333); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#666, #333); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#666, #333); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#666, #333); /* Standard syntax */
+	border-bottom:5px solid #666
+}
+#HeaderWrapper {
+	height: 99px;
+	width: 1000px;
+	margin: 0px auto;
+}
+.topmenu {
+	height: 36px;
+	float: right;
+	position: relative;
+	width: 400px;
+	background: transparent url("../images/topMenuBG.png") no-repeat scroll center top;
+}
+.topmenu ul li {
+	float: left;
+	position: relative;
+	list-style: outside none none;
+}
+.topmenu ul {
+	padding: 10px 0px 0px 10px;
+	margin: 0px;
+}
+.topmenu ul li a {
+	float: left;
+	position: relative;
+	color: #BEBEBE;
+	list-style: outside none none;
+	text-decoration: none;
+	border-right: 1px solid #BEBEBE;
+	font-family: arial;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 12px;
+}
+#NavMenu {
+	width: auto;
+	float: right;
+	position: relative;
+	margin-right: 16px;
+	background: transparent none repeat scroll 0% 0%;
+	margin-top: 32px;
+}
+#NavMenu li {
+	display: inline-block;
+	position: relative;
+	float: left;
+	margin-right: 3px;
+	margin-left: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#NavMenu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: outside none none;
+}
+#NavMenu li:hover a {
+	background: #3E7E9E none repeat scroll 0% 0%;
+	padding: 5px;
+	color: #FFF;
+}
+#NavMenu a:hover {
+	color: #00ADEF;
+}
+#NavMenu a {
+	float: left;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 5px 10px;
+	color: #E3E4E9;
+	line-height: 1em;
+	text-align: center;
+	font-family: "AlegreyaSans", arial;
+}
+a:link, a:active, a:visited {
+	color: #3683AB;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="HeaderInnerBG">
+    <div id="HeaderWrapper">
+      <div class="topmenu">
+        <ul>
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Tasks</a></li>
+          <li><a href="#" style="border-right:none; padding-right:0px;font-weight:bold" > Welcome Jane Doe</a></li>
+          <li><a href="#" class="noRightBorder" style=" padding-left:5px; border-right:none; ">- Logout</a></li>
+        </ul>
+      </div>
+      <div class="logo">ONLINE SHOP - ADMIN </div>
+    </div>
+  </div>
+  
+     <!--- Dashboard box section starts here ---> 
+
+  <div class="row clearBoth" style="margin-bottom:5px;">
+    <div class="col-md-2 ">
+      <div class="sm-st clearfix borderBG"> <span class="sm-st-icon st-red">&nbsp;</span>
+        <div class="sm-st-info"> <span>1300</span> Total Tasks </div>
+      </div>
+    </div>
+    <div class="col-md-2 ">
+      <div class="sm-st clearfix borderBG"> <span class="sm-st-icon st-violet">&nbsp;</span>
+        <div class="sm-st-info"> <span>1200</span> Total Messages </div>
+      </div>
+    </div>
+    <div class="col-md-2 ">
+      <div class="sm-st clearfix borderBG"> <span class="sm-st-icon st-blue">&nbsp;</span>
+        <div class="sm-st-info"> <span>320</span> Project 1 </div>
+      </div>
+    </div>
+    <div class="col-md-2 ">
+      <div class="sm-st clearfix borderBG"> <span class="sm-st-icon st-green">&nbsp;</span>
+        <div class="sm-st-info"> <span>367</span> Project 2 </div>
+      </div>
+    </div>
+    <div class="col-md-2 ">
+      <div class="sm-st clearfix borderBG"> <span class="sm-st-icon st-brown">&nbsp;</span>
+        <div class="sm-st-info"> <span>567</span> Project 3 </div>
+      </div>
+    </div>
+  </div>
+       <!--- Dashboard box section ends here ---> 
+
+   <!--- Main Project section starts here ---> 
+
+  <div class="row clearBoth">
+    <div class="col-md-8">
+      <section class="panel">
+        <header class="panel-heading"> Work Progress </header>
+        <div class="panel-body table-responsive">
+          <table class="table table-hover" width="100%">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Projects</th>
+                <th>Managers</th>
+                <!-- <th>Client</th> -->
+                <th>Deadline</th>
+                <!-- <th>Price</th> -->
+                <th>Status</th>
+                <th>Progress</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Project 1</td>
+                <td>Manger 1</td>
+                <!-- <td>Steve</td> -->
+                <td>10/10/2015</td>
+                <!-- <td>$1500</td> -->
+                <td><span class="label label-red">in progress</span></td>
+                <td><span class="badge badge-info">50%</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Project 2</td>
+                <td>Manger 2</td>
+                <!-- <td>Darren</td> -->
+                <td>10/8/2014</td>
+                <!-- <td>$1500</td> -->
+                <td><span class="label label-green">completed</span></td>
+                <td><span class="badge badge-green">100%</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Project 3</td>
+                <td>Manger 3</td>
+                <!-- <td>Darren</td> -->
+                <td>10/8/2014</td>
+                <!-- <td>$1500</td> -->
+                <td><span class="label label-green">completed</span></td>
+                <td><span class="badge badge-green">100%</span></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Project 4</td>
+                <td>Manger 4</td>
+                <!-- <td>Darren</td> -->
+                <td>10/8/2014</td>
+                <!-- <td>$1500</td> -->
+                <td><span class="label label-green">completed</span></td>
+                <td><span class="badge badge-green">100%</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <!--end col-6 -->
+    <div class="col-md-4">
+      <section class="panel">
+        <header class="panel-heading"> Report </header>
+        <div class="panel-body table-responsive"> CHART COMES HERE </div>
+      </section>
+    </div>
+  </div>
+  
+ <!--- Main Project section ends here ---> 
+  
+<!--- Manager section starts here --->
+  
+  <div class="row clearBoth">
+    <div class="col-md-8">
+      <section class="panel">
+        <header class="panel-heading"> PROJECT 1 </header>
+        <div class="panel-body table-responsive">
+          <table class="table table-hover" width="100%">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Modules</th>
+                <th>Isssue ID</th>
+                <th>Isssue Type</th>
+                <th>Isssue Description</th>
+                <th>Progress</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Module 1</td>
+                <td>12355</td>
+                <td>High</td>
+                <!-- <td>Steve</td> -->
+                <td>Lorem ipsum dolor sit amet</td>
+                <!-- <td>$1500</td> -->
+                <td><span class="label label-red">in progress</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Module 1</td>
+                <td>12355</td>
+                <td>High</td>
+                <!-- <td>Steve</td> -->
+                <td>Lorem ipsum dolor sit amet</td>
+                <!-- <td>$1500</td> -->
+                <td><span class="label label-red">in progress</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Module 1</td>
+                <td>12355</td>
+                <td>High</td>
+                <!-- <td>Steve</td> -->
+                <td>Lorem ipsum dolor sit amet</td>
+                <!-- <td>$1500</td> -->
+                <td><span class="label label-red">in progress</span></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Module 1</td>
+                <td>12355</td>
+                <td>High</td>
+                <!-- <td>Steve</td> -->
+                <td>Lorem ipsum dolor sit amet</td>
+                <!-- <td>$1500</td> -->
+                <td><span class="label label-red">in progress</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-4">
+      <section class="panel">
+        <header class="panel-heading"> Report </header>
+        <div class="panel-body table-responsive"> CHART COMES HERE </div>
+      </section>
+    </div>
+  </div>
+<!--- Manager section ends here --->
+
+
+</div>
+</body>
+</html>
