@@ -2,14 +2,17 @@ package test;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Date;
 
 public class MySQLAccess {
-	private Connection connect = null;
-	private Statement statement = null;
-	private ResultSet resultSet = null;
+  private Connection connect = null;
+  private Statement statement = null;
+  private PreparedStatement preparedStatement = null;
+  private ResultSet resultSet = null;
 
 	public void readDataBase() throws Exception {
 		try {
@@ -19,6 +22,19 @@ public class MySQLAccess {
 			statement = connect.createStatement();
 			resultSet = statement.executeQuery("select * FROM jira_module");
 			writeResultSet(resultSet);
+			
+		      preparedStatement = connect
+		          .prepareStatement("INSERT INTO customer_commands values (?, ?, ?, ?, ? , ?, ?, ?)");
+		      preparedStatement.setString(1, "title");
+		      preparedStatement.setString(2, "commands");
+		      preparedStatement.setString(3,  "category");
+		      preparedStatement.setString(4, "module_name");
+		      preparedStatement.setString(5, "issensitive");
+		      preparedStatement.setString(6,  "user_mail_id");
+		      preparedStatement.setString(7, "dev_group_id");
+		      preparedStatement.setDate(4, (java.sql.Date) new Date());
+		      preparedStatement.executeUpdate();
+
 		} catch (Exception e) {
 			throw e;
 		} finally {
