@@ -1,5 +1,18 @@
-jasmine
- lib\jasmine-2.3.4
- nbproject\private
- spec
- src
+DB
+{
+  "jdbcUrl": "jdbc:mysql://us-cdbr-iron-east-02.cleardb.net/ad_561f50e17a446b4?user=b8019806ec6494&password=3e315020",
+  "uri": "mysql://b8019806ec6494:3e315020@us-cdbr-iron-east-02.cleardb.net:3306/ad_561f50e17a446b4?reconnect=true",
+  "name": "ad_561f50e17a446b4",
+  "hostname": "us-cdbr-iron-east-02.cleardb.net",
+  "port": "3306",
+  "username": "b8019806ec6494",
+  "password": "3e315020"
+}
+
+Mail
+
+{
+  "password": "YDBa9nvRqYV68174",
+  "hostname": "smtp.sendgrid.net",
+  "username": "tXIXNKslLC"
+}
