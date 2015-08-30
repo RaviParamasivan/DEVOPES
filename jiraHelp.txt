@@ -1,0 +1,85 @@
+madhan@itechgenie.com
+Verizon@123
+
+
+Manual Settings
+
+If you do not see an automatic configuration script for your client in the list above, you can use the settings below to manually configure your mail client:
+Secure SSL/TLS Settings
+(Recommended)
+Username: 	madhan@itechgenie.com
+Password: 	Use the email account’s password.
+Incoming Server: 	ns11-999.999servers.com
+
+    IMAP Port: 993
+    POP3 Port: 995
+
+Outgoing Server: 	ns11-999.999servers.com
+
+    SMTP Port: 465
+
+Authentication is required for IMAP, POP3, and SMTP.
+Non-SSL Settings
+(This is NOT recommended.)
+Username: 	madhan@itechgenie.com
+Password: 	Use the email account’s password.
+Incoming Server: 	mail.itechgenie.com
+
+    IMAP Port: 143
+    POP3 Port: 110
+
+Outgoing Server: 	mail.itechgenie.com
+
+    SMTP Port: 25
+
+Authentication is required for IMAP, POP3, and SMTP.
+
+http://kelpie9:8081/rest/api/2/search?jql=project=QA+order+by+duedate&fields=id,key
+
+https://jigarthandaone.atlassian.net/rest/api/2/search?jql=assignee=fred
+
+
+developer :
+
+https://jigarthandaone.atlassian.net/rest/api/2/search?jql=project=DevTest&fields=id,key
+
+http://jigarthandaone.atlassian.net/rest/api/2/issue/
+
+
+{
+   "fields": {
+       "project":
+       { 
+          "key": "TEST"
+       },
+       "summary": "Who seeks a faultless friend RESTs friendless.",
+       "description": "Creating an issue and setting time tracking fields",
+       "issuetype": {
+          "name": "Bug"
+        },       
+        "timetracking":
+        {
+           "originalEstimate": "1d 2h",
+           "remainingEstimate": "3h 25m"
+        }
+    }
+}
+
+{
+    "fields": {
+       "project":
+       { 
+          "key": "TEST"
+       },
+       "summary": "REST ye merry gentlemen.",
+       "description": "Creating of an issue using project keys and issue type names using the REST API",
+       "issuetype": {
+          "name": "Bug"
+       }
+   }
+}
+
+http://jigarthandaone.atlassian.net/rest/api/2/issue/DEV-7/attachments
+
+header : X-Atlassian-Token: nocheck
+tyep: multipart/form-data
